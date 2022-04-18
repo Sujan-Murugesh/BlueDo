@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg14"
+    tools:context=".Admin.AdminHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_admin_home1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#0aadf6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Admin Home"
+            android:fontFamily="@font/bree_serif"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/admin_logout_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/logout"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/relativeLayout_admin_home1"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admin_add_new_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/add_product"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add a New Product"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admin_create_new_category_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/add_cate"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Create New Category"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--TODO SECTION 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/check_approved_product_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/check_and_approved"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Check &amp; Approve New Products"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/check_order_details_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/check_new_orders"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Check New Orders"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--TODO SECTION 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/maintaine_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/maintain_products"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Maintaining Products"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admin_manage_category_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/manage_category"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Manage Categories"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--TODO SECTION 4 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admin_add_banner_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/banner"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add New Banners"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admin_create_new_account_btn"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/add_admin"
+                        android:background="#0aadf6"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add New Admin Account"
+                        android:layout_marginTop="110dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/adminPrimaryDark"
+                        android:fontFamily="@font/bree_serif"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

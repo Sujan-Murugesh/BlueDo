@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg13"
+    tools:context=".Buyer.MainActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/applogo"/>
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:background="@drawable/log3d" />-->
+
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/app_slogan"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/bree_serif"/>
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seller_begin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/basic_buttons"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Already have an Account? Login"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/main_join_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_login_btn"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Join Now"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/seller_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:text="Want to become a seller?"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

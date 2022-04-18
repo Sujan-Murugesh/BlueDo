@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg14"
+    tools:context=".Admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Select A Category"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slogan_category"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

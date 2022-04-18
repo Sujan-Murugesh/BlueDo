@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    tools:context=".Seller.SellerHomeActivity">
+
+    <TextView
+        android:id="@+id/ti_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Seller Home"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bree_serif"
+        android:textSize="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_home_recyeclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ti_seller"
+        android:layout_above="@+id/relativeLayout_sellerhome"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/relativeLayout_sellerhome"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:id="@+id/seller_Home_link"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home_black_24dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Home"
+                    android:textColor="@color/adminPrimaryDark"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seller_addnewProduct_link"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add Product"
+                    android:textColor="@color/adminPrimaryDark"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seller_logout_link"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logout"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:layout_gravity="center"
+                    android:textColor="@color/adminPrimaryDark"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

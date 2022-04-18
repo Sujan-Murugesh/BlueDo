@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    tools:context=".Seller.SellerLoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Already \nhave an \nAccount?" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_register_hero" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sellerLogtextInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/sellerLogEmail"
+                    style="@style/modifiedEditText"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sellerLogtextInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/sellerLogPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/seller_forget_password_link"
+                    style="@style/viewParent"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="Forgot Password?"
+                    android:textSize="13sp"
+                    android:textColor="@color/primaryTextColor"
+                    />
+
+            </LinearLayout>
+
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/sellerLogin_btn"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Login as Seller"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+            <TextView
+                android:id="@+id/seller_logreg_link"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="onsellerLoginClick"
+                android:text="New user? Register Now"
+                android:textAlignment="center"
+                android:textColor="@color/themeColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="230dp"
+                    android:gravity="center"
+                    android:text="Simply you can \nsell your products\nthrough BlueDo.." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onsellerLoginClick"
+        android:src="@drawable/ic_add_img" />
+</RelativeLayout>

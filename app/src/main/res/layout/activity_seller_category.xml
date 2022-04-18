@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    tools:context=".Seller.SellerCategoryActivity">
+
+    <TextView
+        android:id="@+id/seller_slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="Select a Product Category"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seller_slogan_category"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

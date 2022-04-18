@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "19881882829",
+    "project_id": "bluedo-3649f",
+    "storage_bucket": "bluedo-3649f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19881882829:android:fe173c314fa71385ec6584",
+        "android_client_info": {
+          "package_name": "com.sujan.bluedo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19881882829-m8stk3ju819ripcui15hg808d3pp7q34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sujan.bluedo",
+            "certificate_hash": "15170fe2c54aefb72c401e4e2e4e1f88ba64404f"
+          }
+        },
+        {
+          "client_id": "19881882829-mrgm8ng30b4aveb5f952tbce735alaio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3HjVXS3YVoT9qksZ_pk5HovjsSFIJbSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19881882829-mrgm8ng30b4aveb5f952tbce735alaio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
